@@ -137,14 +137,14 @@ void Binary_Search_Tree::Delete(int k) {
 
 // -----private member function-----
 
-// 回傳 root 的左子樹的最左邊的 node
+// 回傳 root 的最左邊的 node
 Node* Binary_Search_Tree::Left_Most(Node *node) {
     if (node == NULL) return NULL;
     if (node->Get_Left() != NULL) return Left_Most(node->Get_Left());
     return node;
 }
 
-// 回傳 current_Node 的下一個 node (以 inorder 巡訪)
+// 回傳 current_Node 的下一個 node (以 inorder 巡訪) (右子樹最小的 node)
 Node* Binary_Search_Tree::Sucessor(Node *current_Node) {
     if (current_Node->Get_Right() != NULL) {
         return Left_Most(current_Node->Get_Right());
