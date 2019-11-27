@@ -13,7 +13,7 @@ int main(){
 
     int arr[SIZE] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
-    cout << "нье╗..." << endl;
+    cout << "Origion..." << endl;
     for (int i = 0; i < SIZE; i++) cout << arr[i] << " ";
     
     cout << endl << "Quick Sort..." << endl;

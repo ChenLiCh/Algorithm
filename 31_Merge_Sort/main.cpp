@@ -14,7 +14,7 @@ int main(){
     int arr[] = {5,3,8,6,2,7,1,4};
     vector<int> v1(arr, arr+sizeof(arr)/sizeof(int));
 
-    cout << "нье╗..." << endl;
+    cout << "Origion..." << endl;
     for (vector<int>::iterator it = v1.begin(); it != v1.end(); it++) cout << *it << " ";
     
     cout << endl << "Merge Sort..." << endl;
