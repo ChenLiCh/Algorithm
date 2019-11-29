@@ -26,7 +26,8 @@ void Selection_Sort(T arr[]) {
 	T temp = 0;
 	for (int i = 0; i < 4; i++) {
 		max_index = i;
-		for (int j = i + 1; j < 5; j++) if (arr[max_index] < arr[j]) max_index = j;
+		for (int j = i + 1; j < 5; j++) 
+			if (arr[max_index] < arr[j]) max_index = j;
 		temp = arr[i];
 		arr[i] = arr[max_index];
 		arr[max_index] = temp;
