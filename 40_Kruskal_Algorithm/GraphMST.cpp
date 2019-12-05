@@ -19,7 +19,7 @@ void GraphMST::Add_Edge(int from, int to, int weight) {
     adj_Matrix[to][from] = weight;
 }
 
-// 
+
 int Find_Set_and_Collapsing(int *subset, int i) {
 
     // find root

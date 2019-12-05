@@ -1,7 +1,8 @@
+#ifndef GRAPHMST_H
+#define GRAPHMST_H
 #include <iostream>
 #include <cstdlib>
 #include <vector>
-#include <list>
 #include <algorithm>
 #include <iomanip>
 
@@ -30,3 +31,4 @@ class GraphMST {
         int num_Vertex;
         vector<vector<int>> adj_Matrix;
 };
+#endif

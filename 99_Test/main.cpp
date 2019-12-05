@@ -1,27 +1,27 @@
 #include <iostream>
 #include <cstdlib>
-#define SIZE 10
-using namespace std;
+// #include "GraphMST.cpp"
 
-void Test(int*);
+using namespace std;
 
 int main() {
 
-    int arr[SIZE] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-    cout << "Origion..." << endl;
-    for (int i = 0; i < SIZE; i++) cout << arr[i] << " ";
+    // GraphMST g(7);
+    // g.Add_Edge(0, 1, 5);
+    // g.Add_Edge(0, 5, 3);
+    // g.Add_Edge(1, 2, 10);
+    // g.Add_Edge(1, 4, 1);
+    // g.Add_Edge(1, 6, 4);
+    // g.Add_Edge(2, 3, 5);
+    // g.Add_Edge(2, 6, 8);
+    // g.Add_Edge(3, 4, 7);
+    // g.Add_Edge(3, 6, 9);
+    // g.Add_Edge(4, 5, 6);
+    // g.Add_Edge(4, 6, 2);
 
-    Test(arr);
-
-    cout << endl << "After..." << endl;
-    for (int i = 0; i < SIZE; i++) cout << arr[i] << " ";
-
+    // cout << "MST found by Kruskal: " << endl;
+    //g.KruskalMST();
+     
     system("pause");
     return 0;
-}
-
-void Test(int *arr) {
-    for (int i = 0; i < SIZE; i++) arr[i] *=2;
-    cout << endl << "Test..." << endl;
-    for (int i = 0; i < SIZE; i++) cout << arr[i] << " ";
 }
