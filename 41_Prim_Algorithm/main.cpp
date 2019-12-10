@@ -1,3 +1,4 @@
+// reference: http://alrightchiu.github.io/SecondRound/minimum-spanning-treeprims-algorithm.html
 #include <iostream>
 #include <cstdlib>
 #include "GraphMST.cpp"

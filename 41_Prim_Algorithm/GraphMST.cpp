@@ -23,12 +23,10 @@ int Min_Key_Extract(int *key, bool *visited, int size) {
 
     int min = MAX_Weight;
     int min_Index = 0;
-    for (int i = 0; i < size; i++) {
-        if (visited[i] == false && key[i] < min) {
-            min = key[i];
-            min_Index = i;
-        }
-    }
+    for (int i = 0; i < size; i++)
+        if (visited[i] == false && key[i] < min)
+            min = key[i], min_Index = i;
+
     return min_Index;
 }
 
@@ -43,7 +41,7 @@ void GraphMST::PrimMST(int start = 0) {
         visited[i] = false;
     }
 
-    key[start] = 0;
+    key[start] = 0; // 起點的距離設為 0
     for (int i = 0; i < num_Vertex; i++) {
         int min_Key_Index = Min_Key_Extract(key, visited, num_Vertex);
         visited[min_Key_Index] = true;

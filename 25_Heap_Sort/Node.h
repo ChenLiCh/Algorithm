@@ -11,7 +11,7 @@ public:
 	Node() {}
 	Node(T1 e, T2 k) : element(e), key(k) {}
 	~Node() {
-		//cout << "¤@­Ó Node ¸Ñºc..." << endl << endl;
+		//cout << "destroy..." << endl << endl;
 	}
 
 	void Set_Element(T1 e) {
